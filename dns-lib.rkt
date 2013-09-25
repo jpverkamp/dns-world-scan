@@ -122,6 +122,9 @@
 ; Read a DNS encoded hostname, return bytes read and the name
 (define (decode-hostname buffer [start 0])
   (cond
+    ; Not enough data
+    [(>= start (bytes-length buffer))
+     (values 0 #f)]
     ; Pointer based hostname
     [(>= (bytes-ref buffer start) 64)
      (values 2
