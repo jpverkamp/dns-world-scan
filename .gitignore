@@ -2,3 +2,6 @@ compiled
 *~
 \#*
 *.bak
+targets.txt
+ip-mappings.csv
+resolvers.txt
