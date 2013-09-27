@@ -5,3 +5,4 @@ compiled
 targets.txt
 ip-mappings.csv
 resolvers.txt
+output*.txt
